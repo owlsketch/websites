@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<link rel="icon" href="./img/single.png"></link>
+	<title> Depósito Dental Donaji </title>
+	
+	<link rel="stylesheet" type="text/css" href="./css/main.css"></link>
+	<link rel="stylesheet" type="text/css" href="./css/contact.css"></link>
+	<script src="./js/jquery-1.11.1.js"></script>
+	<script src="./js/script.js"></script>
+</head>
+
+
+<body>
+<div id="wrapper">
+	<div id="links_top">
+			<ul id="links_left">
+			<li><a href="./index.html"><img src="./img/logo.jpg" width="180px" height="73px" alt="Deposito Dental Donaji"/></a></li>
+
+			<div id="navigation">
+			<li><a href="./index.html">Inicio</a></li>
+			<li><a href="./products.html">Productos<img id="downArrow" src="./img/downArrow.png" width="16px" height="16px"/></a></li>
+			<li><a href="./services.html">Servicios</a></li>
+			<li><a href="./contact.html">Contacto</a></li>
+			</div>
+			</ul>
+	</div>
+
+	<div class="seperator"></div>	
+
+
+	<div class="six">
+
+	<h2> Dirección </h2>
+	<p> Francisco Zarco No. 101, Col. Reforma Agraria, C.P. 71230 </p>
+	<p> Sta. Cruz Xoxocotlán, Oaxaca, Oax. </p>
+
+	<div class=" seperator content_seperator">
+	</div>
+	<h2> Comunicación </h2>
+	<p> Tel. 951 144 7583 </p>
+	<p> Correo electrónico: ddedonaji@hotmail.com </p>
+
+	<div class=" seperator content_seperator">
+	</div>
+
+	<h2> Horario de Atención </h2>
+	<p> El Deposito Dental atiende de lunes a viernes, de 7:00 a 19:00 horas, los sábados de 7:00 a 14:00 horas. </p>
+	
+	</div>
+
+	<div id="map">
+	<iframe width="525" height="400" frameborder="0" scrolling="no" marginheight="0" marginwidth="0"
+	src="https://maps.google.com.mx/maps?f=q&amp;source=s_q&amp;hl=es-419&amp;geocode=&amp;q=Francisco+Zarco+101,+%C3%81rea+Sin+Asignaci%C3%B3n+de+Nombre+de+Colonia+(%C3%81rea+Sin+Definici%C3%B3n+de+L%C3%ADmites+Municipales+Entre+Los+Municipios+de+Oaxaca+de+Ju%C3%A1rez+y+Santn),+Santa+Cruz+Xoxocotl%C3%A1n&amp;aq=0&amp;oq=101+Fr&amp;sll=17.046733,-96.728697&amp;sspn=0.012945,0.021136&amp;gl=mx&amp;ie=UTF8&amp;hq=&amp;hnear=Francisco+Zarco+101,+%C3%81rea+Sin+Asignaci%C3%B3n+de+Nombre+de+Colonia+(%C3%81rea+Sin+Definici%C3%B3n+de+L%C3%ADmites+Municipales+Entre+Los+Municipios+de+Oaxaca+de+Ju%C3%A1rez+y+Santn),+Santa+Cruz+Xoxocotl%C3%A1n,+Oaxaca&amp;ll=17.046657,-96.728566&amp;spn=0.006431,0.010568&amp;t=m&amp;z=14&amp;output=embed"></iframe><br/>
+	
+	</div>
+	<div class="seperator content_seperator"></div>
+
+	<footer>
+	<ul>
+	<li> Copyright 2014 - www.dentaldonaji.com </li>
+	<li> Para servir a las necesidades de la comunidad odontológica </li>
+	<li> Sitio web por Gibran Garcia </li>
+	</ul>
+</footer>
+</div>
+
+<script>
+$(document).ready(function() {
+	
+		var width = $(this).width();
+		$(window).resize(function() {
+		width = $(this).width();
+		headertoggle(width);
+		});
+});
+
+function headertoggle(width){
+	if(width < 1162)
+	{
+	$("#map").css("margin","auto");
+	$("#map").css("float","none");
+	$("#map").css("display","block");
+	$(".six").css("text-align","center");
+	$(".six").css("margin","auto");
+	$(".six").css("float","none");
+	$(".six").css("display","block");
+	$(".six").css("width","90%");
+	$("p").css("margin-top","0px");
+	$("p").css("margin-bottom","0px");
+	$("#map").width("622px");
+	$("iframe").width("620px");
+	}
+	else if (width >= 1162)
+	{
+	$("#map").css("margin","none");
+	$("#map").css("float","left");
+	$("#map").css("display","inline-block");
+	$(".six").css("text-align","left");
+	$(".six").css("margin","none");
+	$(".six").css("float","left");
+	$(".six").css("display","inline-block");
+	$(".six").css("width","49%");
+	$("p").css("margin-top","16px");
+	$("p").css("margin-bottom","16px");
+	$("#map").width("525px");
+	$("iframe").width("525px");
+	}
+		
+		if(width < 800)
+		{
+			$("#links_top ul li").css("margin-right","5px");
+			$("#links_top ul li").css("padding-right","5px");
+			$("#links_top ul li").css("padding-left", "5px");
+			$("#links_left").css("padding-left","5px");
+			$("#navigation").css("padding-left","4px");
+			$("#navigation").css("padding-right","4px");
+			$("#navigation").css("margin-right","0px");
+			$("#navigation").css("margin-left","0px");
+			$("body").width("95%");
+		}
+		else if(width >= 800) {
+			$("#links_top ul li").css("margin-right","15px");
+			$("#links_top ul li").css("padding-right","15px");
+			$("#links_top ul li").css("padding-left", "15px");
+			$("#links_left").css("padding-left","40px");
+			$("#navigation").css("padding-left","15px");
+			$("#navigation").css("padding-right","15px");
+			$("#navigation").css("margin-right","15px");
+			$("#navigation").css("margin-left","5px");
+			$("body").width("90%");
+		}
+}
+</script>
+</body>
+</html>

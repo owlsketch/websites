@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<link rel="icon" href="./img/single.png"></link>
+	<title> Depósito Dental Donaji </title>
+	
+	<link rel="stylesheet" type="text/css" href="./css/main.css"></link>
+	<link rel="stylesheet" type="text/css" href="./css/nivo-slider.css" meadia="screen"></link>
+	<link rel="stylesheet" type="text/css" href="./css/index.css"></link>
+	<script src="./js/jquery-1.11.1.js"></script>
+	<script src="./js/script.js"></script>
+	<script src="./js/jquery.nivo.slider.pack.js"></script>
+</head>
+
+
+<body>
+<div id="wrapper">
+	<div id="links_top">
+			<ul id="links_left">
+			<li><a href="./index.html"><img src="./img/logo.jpg" width="180px" height="73px" alt="Deposito Dental Donaji"/></a></li>
+
+			<div id="navigation">
+			<li><a href="./index.html">Inicio</a></li>
+			<li><a href="./products.html">Productos<img id="downArrow" src="./img/downArrow.png" width="16px" height="16px"/></a></li>
+			<li><a href="./services.html">Servicios</a></li>
+			<li><a href="./contact.html">Contacto</a></li>
+			</div>
+			</ul>
+		</div>
+
+	<div class="seperator"></div>
+	
+	<div class="twelve">
+		<div id="slider_wrapper">
+			<div id="slider" class="nivoSlider">
+			<img src="./img/first.jpg"/>
+			<img src="./img/second.jpg"/>
+			<img src="./img/third.jpg"/>
+			</div>
+		</div>
+	</div>
+
+	<div class="mission">
+	<h2> Nuestra misión </h2>
+	<p> El <b>Depósito Dental Donaji</b> existe para servir y resolver las situaciones y las necesidades de la comunidad odontológica, tanto estudiantes como profesionales. Asi tambien contribuir con la informacion y manejo de los materiales que existen en el mercado y de los cuales contamos con su distribución.</p>
+	</div>
+
+	<div class="seperator content_seperator"></div>
+
+	<footer>
+	<ul>
+	<li> Copyright 2014 - www.dentaldonaji.com </li>
+	<li> Para servir a las necesidades de la comunidad odontológica </li>
+	<li> Sitio web por Gibran Garcia </li>
+	</ul>
+	</footer>
+</div>
+</body>
+</html>
+
+<script type="text/javascript">
+$(window).load(function(){
+	$("#slider").nivoSlider({
+	effect: "sliceDownLeft",
+	slices: 16,
+	pauseTime: 5000,
+	directionNav: false,
+	controlNav: true,
+	pauseOnHover: true
+	});
+});
+</script>
